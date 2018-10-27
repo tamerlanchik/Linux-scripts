@@ -22,7 +22,7 @@ while i<1:
                         comm=makeMessage(TOKEN, ADMIN_ID, mess1)
                         os.system(comm)
                         state0[n]=t
-                t = os.system("curl -s POST http://192.168.142.10"+str(n)+" > /dev/null")
+                t = os.system("curl -s -m 1 http://192.168.142.10"+str(n)+" > /dev/null")
                 if t!=0:
                         mess="No HTTP connection to 192.168.142.10"+str(n)
                         os.system(makeMessage(TOKEN, ADMIN_ID, mess))
