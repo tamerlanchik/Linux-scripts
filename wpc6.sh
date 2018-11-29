@@ -4,8 +4,8 @@ echo "Enter wordpress password: "
 read password
 
 yum install -y httpd
-service sshd start
-chkconfig sshd on
+service httpd start
+chkconfig httpd on
 yum install -y mysql mysql-server
 chkconfig mysqld on
 service mysqld start
